@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+
+<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+
+	<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/kickstarter_schema</property>
+	<property name="hibernate.connection.username">nillohit</property>
+	<property name="hibernate.connection.password">nandi</property>
+	<property name="hibernate.connection.autocommit">true</property>
+	<property name="show_sql">true</property>
+	<property name="connection.pool_size">10</property>
+	<mapping class="com.neil.hibernate.entities.User"></mapping>
+	<mapping class="com.neil.hibernate.entities.Project"></mapping>
+	
+	
+</session-factory>
+</hibernate-configuration>
